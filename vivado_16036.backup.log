@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.2 (64-bit)
+# SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
+# IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+# Start of session at: Wed Dec 26 13:36:59 2018
+# Process ID: 16036
+# Current directory: A:/Fpga ramp up/Mips-1 id
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13640 A:\Fpga ramp up\Mips-1 id\MIPS.xpr
+# Log file: A:/Fpga ramp up/Mips-1 id/vivado.log
+# Journal file: A:/Fpga ramp up/Mips-1 id\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {A:/Fpga ramp up/Mips-1 id/MIPS.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'A:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 762.895 ; gain = 72.457
+update_compile_order -fileset sources_1
+close [ open {A:/Fpga ramp up/Mips-1 id/MIPS.srcs/sources_1/new/control_unit.vhd} w ]
+add_files {{A:/Fpga ramp up/Mips-1 id/MIPS.srcs/sources_1/new/control_unit.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec 26 19:12:27 2018] Launched synth_1...
+Run output will be captured here: A:/Fpga ramp up/Mips-1 id/MIPS.runs/synth_1/runme.log
+[Wed Dec 26 19:12:27 2018] Launched impl_1...
+Run output will be captured here: A:/Fpga ramp up/Mips-1 id/MIPS.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 26 19:19:08 2018...

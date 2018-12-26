@@ -1,0 +1,294 @@
+/*
+
+Xilinx Vivado v2018.2.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2348494 on Mon Oct  1 18:25:44 MDT 2018
+IP Build: 2318053 on Mon Oct  1 21:44:26 MDT 2018
+
+Process ID: 6152
+License: Customer
+
+Current time: 	Thu Dec 27 00:58:50 EET 2018
+Time zone: 	Eastern European Time (Europe/Athens)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 267 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	A:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	A:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	vlad
+User home directory: C:/Users/vlad
+User working directory: A:/Fpga ramp up/Mips-1 id
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: A:/Xilinx/Vivado
+HDI_APPROOT: A:/Xilinx/Vivado/2018.2
+RDI_DATADIR: A:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: A:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/vlad/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/vlad/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/vlad/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	A:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	A:/Fpga ramp up/Mips-1 id/vivado.log
+Vivado journal file location: 	A:/Fpga ramp up/Mips-1 id/vivado.jou
+Engine tmp dir: 	A:/Fpga ramp up/Mips-1 id/.Xil/Vivado-6152-DESKTOP-QQICM45
+
+Xilinx Environment Variables
+----------------------------
+XILINX: A:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: A:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: A:/Xilinx/Vivado/2018.2
+XILINX_SDK: A:/Xilinx/SDK/2018.2
+XILINX_VIVADO: A:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: A:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	150 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 523 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 58 MB (+57909kb) [00:00:10]
+// [Engine Memory]: 494 MB (+366643kb) [00:00:10]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: A:\Fpga ramp up\Mips-1 id\MIPS.xpr. Version: Vivado v2018.2.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {A:/Fpga ramp up/Mips-1 id/MIPS.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {A:/Fpga ramp up/Mips-1 id/MIPS.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [Engine Memory]: 533 MB (+14495kb) [00:00:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 533 MB. GUI used memory: 34 MB. Current time: 12/27/18 12:58:52 AM EET
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'A:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 577 MB (+18273kb) [00:00:26]
+// Tcl Message: open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 762.434 ; gain = 58.383 
+// Project name: MIPS; location: A:/Fpga ramp up/Mips-1 id; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bx (ck)
+// [GUI Memory]: 61 MB (+930kb) [00:00:29]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (test_env.vhd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_env(Behavioral) (test_env.vhd)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_env(Behavioral) (test_env.vhd), mono_pulse_if_wen : mpg(Behavioral) (mpg.vhd)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("test_env.vhd", 84, 88); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 104, 88); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 125, 91); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 129, 95); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 119, 93); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 85, 95); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 85, 95, false, false, false, false, true); // ce (w, ck) - Double Click
+// [GUI Memory]: 65 MB (+765kb) [00:00:55]
+selectCodeEditor("test_env.vhd", 636, 59); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 620, 62); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 620, 62, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("test_env.vhd", 636, 62); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 576, 196); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 562, 196); // ce (w, ck)
+// [GUI Memory]: 69 MB (+292kb) [00:01:23]
+// Elapsed time: 18 seconds
+selectCodeEditor("test_env.vhd", 589, 54); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 589, 54, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "test_env.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 98, 95); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 98, 95, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "test_env.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 194, 96); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 204, 99); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 204, 99, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("test_env.vhd", 271, 212); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 636, 77); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 601 MB. GUI used memory: 40 MB. Current time: 12/27/18 1:00:27 AM EET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("test_env.vhd", 619, 229); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 619, 229, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "test_env.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 198, 94); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 198, 94, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "test_env.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 324, 94); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 324, 94, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("test_env.vhd", 375, 197); // ce (w, ck)
+// [GUI Memory]: 74 MB (+1519kb) [00:02:18]
+selectCodeEditor("test_env.vhd", 357, 193); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 357, 193, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "test_env.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 316, 198); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 316, 198, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "test_env.vhd", 'v'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("test_env.vhd", 623, 92); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 623, 92, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "test_env.vhd", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 78 MB (+1073kb) [00:02:42]
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("test_env.vhd", 42, 78); // ce (w, ck)
+// [GUI Memory]: 84 MB (+1270kb) [00:03:02]
+// Elapsed time: 38 seconds
+selectCodeEditor("test_env.vhd", 70, 95); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 92, 95); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 150, 91); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 152, 91); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 214, 91); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 210, 99); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 288, 92); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 351, 95); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 396, 95); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 440, 82); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 456, 94); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 550, 94); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 72, 98); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 130, 99); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 201, 89); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 80, 62); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 46, 93); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("test_env.vhd", 208, 113); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 208, 113, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("test_env.vhd", 239, 119); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 243, 109); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 243, 109, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("test_env.vhd", 243, 109); // ce (w, ck)
+// Elapsed time: 74 seconds
+selectCodeEditor("test_env.vhd", 214, 109); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 214, 109, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 89 MB (+1779kb) [00:07:02]
+// Elapsed time: 124 seconds
+selectCodeEditor("test_env.vhd", 224, 110); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 224, 110, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 11 seconds
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_GENERATED
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("test_env.vhd", 348, 213); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 324, 66); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("test_env.vhd", 164, 143); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("test_env.vhd", 152, 199); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 42, 192); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 0, 178); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 35, 114); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 32, 64); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 64, 144); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("test_env.vhd", 192, 163); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("test_env.vhd", 70, 87); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 136, 76); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("test_env.vhd", 171, 74); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 188, 85); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 61, 113); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 58, 96); // ce (w, ck)
+// Elapsed time: 31 seconds
+selectCodeEditor("test_env.vhd", 266, 158); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 266, 158, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("test_env.vhd", 197, 231); // ce (w, ck)
+typeControlKey((HResource) null, "test_env.vhd", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 94 MB (+168kb) [00:09:26]
+// Elapsed time: 23 seconds
+selectCodeEditor("test_env.vhd", 103, 113); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("test_env.vhd", 689, 127); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("test_env.vhd", 340, 182); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("test_env.vhd", 260, 183); // ce (w, ck)
+selectCodeEditor("test_env.vhd", 317, 177); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 48 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_env(Behavioral) (test_env.vhd), mono_pulse_if_wen : mpg(Behavioral) (mpg.vhd)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_env(Behavioral) (test_env.vhd), mono_pulse_if_wen : mpg(Behavioral) (mpg.vhd)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_env(Behavioral) (test_env.vhd), instruction_fetching : instruction_fetch(Behavioral) (instruction_fetch.vhd)]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_env(Behavioral) (test_env.vhd), instruction_fetching : instruction_fetch(Behavioral) (instruction_fetch.vhd)]", 6, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("instruction_fetch.vhd", 87, 41); // ce (w, ck)
+selectCodeEditor("instruction_fetch.vhd", 97, 58); // ce (w, ck)
+selectCodeEditor("instruction_fetch.vhd", 102, 79); // ce (w, ck)
+selectCodeEditor("instruction_fetch.vhd", 100, 92); // ce (w, ck)
+selectCodeEditor("instruction_fetch.vhd", 136, 103); // ce (w, ck)
+selectCodeEditor("instruction_fetch.vhd", 107, 130); // ce (w, ck)
+selectCodeEditor("instruction_fetch.vhd", 111, 145); // ce (w, ck)
+selectCodeEditor("instruction_fetch.vhd", 107, 60); // ce (w, ck)
+selectCodeEditor("instruction_fetch.vhd", 111, 74); // ce (w, ck)
+selectCodeEditor("instruction_fetch.vhd", 167, 160); // ce (w, ck)
+selectCodeEditor("instruction_fetch.vhd", 232, 159); // ce (w, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_env(Behavioral) (test_env.vhd), instruction_fetching : instruction_fetch(Behavioral) (instruction_fetch.vhd)]", 6); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_env(Behavioral) (test_env.vhd), instruction_decoding : instruction_decode(Behavioral) (instruction_decode.vhd)]", 7, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_env(Behavioral) (test_env.vhd), instruction_decoding : instruction_decode(Behavioral) (instruction_decode.vhd), register_file : reg_file(Behavioral) (reg_file.vhd)]", 8, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("instruction_decode.vhd", 90, 104); // ce (w, ck)
+selectCodeEditor("instruction_decode.vhd", 104, 95); // ce (w, ck)
+selectCodeEditor("instruction_decode.vhd", 91, 113); // ce (w, ck)
+selectCodeEditor("instruction_decode.vhd", 90, 129); // ce (w, ck)
+selectCodeEditor("instruction_decode.vhd", 94, 147); // ce (w, ck)
+// Elapsed time: 368 seconds
+selectCodeEditor("instruction_decode.vhd", 304, 261); // ce (w, ck)

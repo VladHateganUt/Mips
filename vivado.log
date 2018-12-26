@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.2 (64-bit)
+# SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
+# IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+# Start of session at: Thu Dec 27 00:58:08 2018
+# Process ID: 6152
+# Current directory: A:/Fpga ramp up/Mips-1 id
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12840 A:\Fpga ramp up\Mips-1 id\MIPS.xpr
+# Log file: A:/Fpga ramp up/Mips-1 id/vivado.log
+# Journal file: A:/Fpga ramp up/Mips-1 id\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {A:/Fpga ramp up/Mips-1 id/MIPS.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'A:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 762.434 ; gain = 58.383
+update_compile_order -fileset sources_1

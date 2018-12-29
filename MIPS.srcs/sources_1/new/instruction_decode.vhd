@@ -31,26 +31,25 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity instruction_decode is
-    Port ( clk : in STD_LOGIC;
-           instruction : in STD_LOGIC_VECTOR (15 downto 0);
-           wd : in STD_LOGIC_VECTOR (15 downto 0);
-           rf_wen : in STD_LOGIC;
-           reg_wr : in STD_LOGIC;
-           reg_dst : in STD_LOGIC;
-           ext_op : in STD_LOGIC;
-           rd1 : out STD_LOGIC_VECTOR (15 downto 0);
-           rd2 : out STD_LOGIC_VECTOR (15 downto 0);
-           ext_imm : out STD_LOGIC_VECTOR (15 downto 0);
-           func : out STD_LOGIC_VECTOR (2 downto 0);
-           sa : out STD_LOGIC);
+entity instruction_decode is                                                
+    Port ( clk : in STD_LOGIC;                                              -- clk signal
+           instruction : in STD_LOGIC_VECTOR (15 downto 0);                 -- current instruction
+           wd : in STD_LOGIC_VECTOR (15 downto 0);                          -- data to be written to reg file
+           rf_wen : in STD_LOGIC;                                           -- reg file write enable(button)
+           reg_wr : in STD_LOGIC;                                           -- reg file write control
+           reg_dst : in STD_LOGIC;                                          -- which reg is the destination
+           ext_op : in STD_LOGIC;                                           -- extension control
+           rd1 : out STD_LOGIC_VECTOR (15 downto 0);                        -- data out
+           rd2 : out STD_LOGIC_VECTOR (15 downto 0);                        -- data ou
+           ext_imm : out STD_LOGIC_VECTOR (15 downto 0);                    -- extended immediate
+           func : out STD_LOGIC_VECTOR (2 downto 0);                        -- func for R type instr
+           sa : out STD_LOGIC);                                             -- shift amount for R type instr
 end instruction_decode;
 
 architecture Behavioral of instruction_decode is
 
-signal regf_write_addr : std_logic_vector(2 downto 0);
-signal imm_sign : std_logic;
-signal extended_immediate : std_logic_vector(15 downto 0);
+signal regf_write_addr : std_logic_vector(2 downto 0);                      -- reg file write address
+signal extended_immediate : std_logic_vector(15 downto 0);                  -- extended immedaite - to be computed
 begin
 
 write_address_mux: process(instruction, reg_dst)

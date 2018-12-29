@@ -33,8 +33,8 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity rom_prog is
-  Port (addr : in STD_LOGIC_VECTOR(3 downto 0);
-        do : out STD_LOGIC_VECTOR(15 downto 0) );
+  Port (addr : in STD_LOGIC_VECTOR(15 downto 0);            --read address
+        do : out STD_LOGIC_VECTOR(15 downto 0) );           -- data out
 end rom_prog;
 
 architecture Behavioral of rom_prog is

@@ -35,30 +35,31 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity instruction_fetch is
     Port ( clk : in STD_LOGIC;                                          
-           br_addr : in STD_LOGIC_VECTOR (3 downto 0);                  -- branch address
-           j_addr : in STD_LOGIC_VECTOR (3 downto 0);                   -- jump address
+           br_addr : in STD_LOGIC_VECTOR (15 downto 0);                 -- branch address
+           j_addr : in STD_LOGIC_VECTOR (15 downto 0);                  -- jump address
            pc_src : in STD_LOGIC;                                       -- branch control - mux select
            j_ctrl : in STD_LOGIC;                                       -- jump control - mux select
            pc_en : in STD_LOGIC;                                        -- enable for pc write        
            pc_reset : in STD_LOGIC;                                     -- reset for pc value
            curr_instr : out STD_LOGIC_VECTOR (15 downto 0);             -- current instruction from prog mem
-           next_instr : out STD_LOGIC_VECTOR (3 downto 0));             -- next instruction index (pc)
+           next_instr : out STD_LOGIC_VECTOR (15 downto 0));            -- next instruction index (pc)
 end instruction_fetch;
 
 architecture Behavioral of instruction_fetch is
 
-signal program_cnt, next_pc, br_mux_out, j_mux_out : std_logic_vector(3 downto 0);
+signal program_cnt : std_logic_vector(15 downto 0);                     -- program counter value 
+signal next_pc : std_logic_vector(15 downto 0);                         -- program counter + 1
+signal br_mux_out : std_logic_vector(15 downto 0);                      -- output of first mux (see schematic) 
+signal j_mux_out : std_logic_vector(15 downto 0);                       -- output of second mux -> to be written in PC
 
 -- ROM signals
-signal rom_addr_reset : std_logic;
-signal rom_data, rom_data_next : std_logic_vector(15 downto 0);
+signal rom_data : std_logic_vector(15 downto 0);
 begin
 
-
+-- rom memory instance
 rom_program_mem: entity work.rom_prog port map(addr => program_cnt, do => rom_data);
 
-
-
+-- pcsrc controls the branch or the next instruction
 branch_mux: process(br_addr,pc_src,next_pc)
     begin
         case pc_src is
@@ -82,7 +83,7 @@ program_counter: process(clk, pc_reset, pc_en, pc_src)
         end if;
         
         if(pc_reset = '1') then
-            program_cnt <= x"0";
+            program_cnt <= x"0000";
         end if;
     end process;
     

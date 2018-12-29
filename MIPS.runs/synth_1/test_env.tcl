@@ -31,6 +31,8 @@ set_property ip_output_repo {a:/Fpga ramp up/Mips-1 id/MIPS.cache/ip} [current_p
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
   {A:/Fpga ramp up/Mips-1 id/MIPS.srcs/sources_1/new/control_unit.vhd}
+  {A:/Fpga ramp up/Mips-1 id/MIPS.srcs/sources_1/new/data_memory.vhd}
+  {A:/Fpga ramp up/Mips-1 id/MIPS.srcs/sources_1/new/execution_unit.vhd}
   {A:/Fpga ramp up/Mips-1 id/MIPS.srcs/sources_1/new/reg_file.vhd}
   {A:/Fpga ramp up/Mips-1 id/MIPS.srcs/sources_1/new/instruction_decode.vhd}
   {A:/Fpga ramp up/Mips-1 id/MIPS.srcs/sources_1/new/rom_prog.vhd}

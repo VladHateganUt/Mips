@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
-| Date         : Wed Dec 26 21:54:37 2018
+| Date         : Sat Dec 29 00:50:37 2018
 | Host         : DESKTOP-QQICM45 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file test_env_control_sets_placed.rpt
 | Design       : test_env
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     4 |
-| Unused register locations in slices containing registers |     6 |
+| Number of unique control sets                            |     5 |
+| Unused register locations in slices containing registers |     0 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,9 +34,8 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      6 |            1 |
 |      8 |            1 |
-|    16+ |            2 |
+|    16+ |            4 |
 +--------+--------------+
 
 
@@ -46,11 +45,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              82 |           17 |
+| No           | No                    | No                     |              88 |           15 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |               8 |            1 |
+| Yes          | No                    | Yes                    |              32 |            5 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -58,13 +57,14 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+-------------------------+-----------------------------+---------------------------+------------------+----------------+
-|       Clock Signal      |        Enable Signal        |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
-+-------------------------+-----------------------------+---------------------------+------------------+----------------+
-|  mono_pulse_if_wen/eqOp |                             |                           |                3 |              6 |
-|  clk_IBUF_BUFG          | mono_pulse_if_wen/E[0]      | mono_pulse_if_reset/AR[0] |                1 |              8 |
-|  clk_IBUF_BUFG          |                             |                           |               14 |             76 |
-|  clk_IBUF_BUFG          | instruction_fetching/p_0_in |                           |                6 |             96 |
-+-------------------------+-----------------------------+---------------------------+------------------+----------------+
++-------------------------+---------------------------+---------------------------+------------------+----------------+
+|       Clock Signal      |       Enable Signal       |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++-------------------------+---------------------------+---------------------------+------------------+----------------+
+|  mono_pulse_if_wen/eqOp |                           |                           |                3 |              8 |
+|  clk_IBUF_BUFG          | InstructionFetch/p_0_in   |                           |                4 |             32 |
+|  clk_IBUF_BUFG          | mono_pulse_if_wen/E[0]    | mono_pulse_if_reset/AR[0] |                5 |             32 |
+|  clk_IBUF_BUFG          |                           |                           |               12 |             80 |
+|  clk_IBUF_BUFG          | InstructionFetch/cat[4]_3 |                           |                6 |             96 |
++-------------------------+---------------------------+---------------------------+------------------+----------------+
 
 

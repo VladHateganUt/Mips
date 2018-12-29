@@ -34,15 +34,15 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity reg_file is
-    Port ( clk : in STD_LOGIC;
-           reg_wr : in STD_LOGIC;
-           ra1 : in STD_LOGIC_VECTOR (2 downto 0);
-           ra2 : in STD_LOGIC_VECTOR (2 downto 0);
-           wa : in STD_LOGIC_VECTOR (2 downto 0);
-           wd : in STD_LOGIC_VECTOR (15 downto 0);
-           wen : in STD_LOGIC;
-           rd1 : out STD_LOGIC_VECTOR (15 downto 0);
-           rd2 : out STD_LOGIC_VECTOR (15 downto 0));
+    Port ( clk : in STD_LOGIC;                                  -- clk signal
+           reg_wr : in STD_LOGIC;                               -- reg file write control
+           ra1 : in STD_LOGIC_VECTOR (2 downto 0);              -- reg1 address
+           ra2 : in STD_LOGIC_VECTOR (2 downto 0);              -- reg2 address
+           wa : in STD_LOGIC_VECTOR (2 downto 0);               -- write address
+           wd : in STD_LOGIC_VECTOR (15 downto 0);              -- data to be written
+           wen : in STD_LOGIC;                                  -- write enable(button)
+           rd1 : out STD_LOGIC_VECTOR (15 downto 0);            -- reg1 value
+           rd2 : out STD_LOGIC_VECTOR (15 downto 0));           -- reg2 value
            
 end reg_file;
 
